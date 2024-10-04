@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="msg-container hide">
+        <p id="msg" >
+             <audio id="audio3">Winner</audio>
+        </p>
+        <button id="new-btn" onclick="audio2.play();"> Play Again</button>
+    </div> 
+    <div class="msg-container1 hide">
+        <p id="msg1" >
+             <audio id="audio4">GameOver!</audio>
+        </p>
+        <button id="new-btn1" onclick="audio2.play();"> Play Again</button>
+    </div>    
+    <main>
+      <h1>Tic-Tac-Toe</h1>
+      <div class="turn-container">
+      <h3 >Turn For</h3>
+      <div class="turn-box align">X</div>
+      <div class="turn-box align">O</div>
+      <div class="bg"></div>
+      </div>
+      <div class="container">
+        <div class="game">
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+          <button class="box" onclick="audio1.play();"></button>
+        </div>
+      </div>
+      <div class="btn">
+      <button id="reset-btn" onclick="audio2.play();">Reset Game</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
