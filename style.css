@@ -194,7 +194,7 @@ h1{
     }
     
     .turn-container h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -215,7 +215,7 @@ h1{
         position: absolute;
         bottom: 0;
         left: 0;
-        height: 30px;
+        height: 40px;
         width: 85px;
         background-color: #FF2E63;
         z-index: -1;
