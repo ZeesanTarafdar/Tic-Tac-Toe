@@ -13,6 +13,42 @@ let turn0 = true; //playerX, playerO
 // let arr = ["apple", "banana", "litchi"]; // 1D array
 // let arr2 = [["apple", "litchi"], ["potato", "mushroom"], ["pants", "shirts"]]; // 2D array
 
+function toggleBtn() {
+  
+  let vol1 = document.getElementById("vol1");
+  let vol2 = document.getElementById("vol2");
+
+  if (vol1.style.display === "none") {
+    vol1.style.display = "block";
+    vol2.style.display = "none";
+    audio2.play();
+    vol1.innerHTML = addEventListener("click", function () {
+     boxes = audio1.play();
+     audio1.currentTime = 0;
+      resetBtn =audio2.play();  
+      newGameBtn =audio2.play();  
+      newGameBtn1 =audio2.play();  
+      audio2.currentTime = 0;
+    });
+  }
+    
+  else {
+    vol1.style.display = "none";
+    vol2.style.display = "block";
+    vol2.innerHTML = addEventListener("click", function () {
+     audio1.pause();
+     audio1.currentTime = 0;
+     audio2.pause();
+     audio2.currentTime = 0;
+     audio3.pause();
+     audio3.currentTime = 0;
+     audio4.pause();
+     audio4.currentTime = 0;
+    });
+  
+}
+}
+
 let audio1 = new Audio();
 audio1.src = "./music/touch.mp3";
 
@@ -93,13 +129,15 @@ const enableBoxs = () => {
 };
 
 const showWinner = (winner) => {
-  msg.innerText = `Congratulation, Winner is ${winner}`;
+  msg.innerText = `Congratulation, Winner is ${winner} .`;
+  msg.style.textShadow = `2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000`;
   msgContainer.classList.remove("hide");
   audio3.play();
   disabledBoxs();
 };
 const gameOver = () => {
-  msg1.innerText = `Opps Sorry Game is Over Please Play Again`;
+  msg1.innerText = `Opps! Sorry Game is Over Please Play Again.`;
+  msg1.style.textShadow = `2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000`;
   msgContainer1.classList.remove("hide");
   audio4.play();
   disabledBoxs();

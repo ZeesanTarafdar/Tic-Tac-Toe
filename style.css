@@ -7,15 +7,25 @@ padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000 ;
 }
 body{
-    background-color: #548687;
+    background-image: url('../img/3D picture of a tic-tac-toe game.png');
     text-align: center;
 }
+
+
 h1{
-    padding-top: 10px;
-    color: #fff;
+    
+    color: #211f1f;
     font-size: 50px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+h3{
+    color: #000000; 
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 .turn-container{
     height: 80px;
@@ -26,6 +36,7 @@ h1{
     grid-template-rows: 1fr 1fr;
     position: relative;
     color: #fff;
+
 }
 .turn-container h3{
     margin: 0;
@@ -77,10 +88,10 @@ h1{
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
-    border: none;
+    border: 2px solid #191913;
     box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color: #b0413e;
+    color: #f70f07;
     background-color: #fff;
     cursor: pointer;
 }
@@ -88,10 +99,10 @@ h1{
 #reset-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #e81cc3;
     color: #fff;
     border-radius: 1.7rem;
-    border: none;
+    border: 2px solid black;
 }
 
 .btn{
@@ -107,10 +118,10 @@ h1{
 #new-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #e81cc3;
     color: #fff;
     border-radius: 1.7rem;
-    border: none;
+    border:  2px solid black;
 }
 
 #new-btn:hover{
@@ -121,10 +132,10 @@ h1{
 }#new-btn1{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #e81cc3;
     color: #fff;
     border-radius: 1.7rem;
-    border: none;
+    border: 2px solid black;
 }
 
 #new-btn1:hover{
@@ -171,6 +182,29 @@ h1{
     
 
 @media screen and (max-width: 400px){
+    .align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000 ;
+    }
+    body{
+        background-image: url('../img/3D picture of a tic-tac-toe game.png');
+        text-align: center;
+    }
+    
+    h1{
+        padding-top: 0.3rem;
+        color: #211f1f;
+        font-size: 50px;
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+    h3{
+        color: #000000; 
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
     .btn{
         padding-top: 0.4rem;
     }
@@ -220,11 +254,7 @@ h1{
         background-color: #FF2E63;
         z-index: -1;
     }
-    h1{
-        padding-top: 0.3rem;
-        color: #fff;
-        font-size: 50px;
-    }
+    
     .game{
         height: 60vmin;
         width: 60vmin;
@@ -241,7 +271,7 @@ h1{
         border: none;
         box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3);
         font-size: 8vmin;
-        color: #b0413e;
+        color: #f70f07;
         background-color: #fff;
         cursor: pointer;
     }
@@ -249,10 +279,10 @@ h1{
         margin-top: 3rem;
         padding: 1rem;
         font-size: 1.25rem;
-        background-color: #191913;
+        background-color: #e81cc3;
         color: #fff;
         border-radius: 1.7rem;
-        border: none;
+        border: 2px solid black;
     }
     .msg-container{
         height: 100vmax;
@@ -278,10 +308,10 @@ h1{
    #new-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #e81cc3;
     color: #fff;
     border-radius: 1.7rem;
-    border: none;
+    border: 2px solid black;
 }
 
 #new-btn:hover{
@@ -292,10 +322,10 @@ h1{
 }#new-btn1{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #e81cc3;
     color: #fff;
     border-radius: 1.7rem;
-    border: none;
+    border: 2px solid black;
 }
 
 #new-btn1:hover{
